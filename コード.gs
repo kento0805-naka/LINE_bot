@@ -39,6 +39,8 @@ function notifyLINE(e) {
   
   var message = '【通知】\n\n';
   
+  message += '${name}様がイベントに申し込みました。\n\n'.replace('${name}', name);
+  message += '連絡先: ${email}\n\n'.replace('${email}', email);
   message += '下記日程に申し込みが入りました。\n\n';
   message += '${schedule}'.replace('${schedule}', schedule);
   
